@@ -43,8 +43,9 @@
 }
 
 .title--bold {
-
+    margin-bottom: 0;
     font-weight: bold;
+    color: #45555F;
 }
 
 .title__h4 {
@@ -56,6 +57,7 @@
 }
 
 .finance__footnote {
+    margin: 0;
     color: #7290A1;
 }
 
@@ -63,20 +65,21 @@
     padding: 120px calc(50% - 582px);
     background-color: #F5F5FA;
     min-height: 1264px;
-    color: #45555F;    
+    color: #45555F;
 }
 
-.finance-wrap{
+.finance-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .finance__contribution {
     box-sizing: border-box;
     display: inline-block;
     background-color: #fff;
-    max-width:574px;
+    max-width: 574px;
     border-radius: 16px 0px 0px 0px;
     padding-top: 56px;
     padding-right: 44px;
@@ -86,10 +89,10 @@
 
 .finance__royalty {
     box-sizing: border-box;
-    
+
     display: inline-block;
     background-color: #fff;
-    max-width:574px;
+    max-width: 574px;
     border-radius: 0px 16px 0px 0px;
     padding-top: 56px;
     padding-right: 44px;
@@ -101,6 +104,25 @@
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.2px;
+}
+
+.finance__investment {
+    min-width: 1164px;
+    background-color: #fff;
+    border-radius: 0px 0px 16px 16px;
+    margin-top: 16px;
+    display: flex;
+}
+
+.finance__start,
+.finance__payback {
+    box-sizing: border-box;
+    width: 580px;
+    padding-top: 56px;
+    padding-right: 44px;
+    padding-bottom: 56px;
+    padding-left: 40px;
+    
 }
 
 
