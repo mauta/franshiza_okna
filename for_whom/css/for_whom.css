@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('/fonts/Gilroylight.woff2') format('woff2'), url('/fonts/Gilroylight.woff') format('woff'), url('/fonts/Gilroylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('/fonts/Gilroyextrabold.woff2') format('woff2'), url('/fonts/Gilroyextrabold.woff') format('woff'), url('/fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    color: rgb(0, 0, 0);
+
+    background-color: #fff;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 48px;
+    color: #2D9CDB;
+}
+
+.title--center {
+    text-align: center;
+}
+
+.title--h3 {
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.for-whom {
+    padding-top: 85px;
+    padding-bottom: 115px;
+
+}
+
+.for-whom__item {
+    width: 276px;
+    text-align: center;
+    margin-right: auro;
+}
+
+.for-whom__list {
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    position: relative;
+}
+
+.for-whom__agency {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/img/agency-ill.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.for-whom__realtor {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/img/realtor-ill.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.for-whom__solo-realtor {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/img/solo-realtor-ill.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+/* добавил размер 830 - иначе не красиво перескакивало вторую строчку */
+@media (min-width: 393px) and (max-width: 830px) {
+
+    .for-whom__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for-whom__item {
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width: 393px) {
+
+    .title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+        
+    .for-whom{
+        padding-top: 75px;
+    }
+    .for-whom__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .for-whom__item {
+        margin-bottom: 64px;
+    }
+}
+
+/* (max-width: 768px) */
