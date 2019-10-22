@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('/fonts/Gilroylight.woff2') format('woff2'), url('/fonts/Gilroylight.woff') format('woff'), url('/fonts/Gilroylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('/fonts/Gilroyextrabold.woff2') format('woff2'), url('/fonts/Gilroyextrabold.woff') format('woff'), url('/fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    color: rgb(0, 0, 0);
+
+    background-color: #fff;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 48px;
+    color: #2D9CDB;
+}
+
+.title--center {
+    text-align: center;
+}
+
+.title--bold {
+
+    font-weight: bold;
+}
+
+.title__h4 {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+    color: #2D9CDB;
+    text-align: left;
+}
+
+.finance__footnote {
+    color: #7290A1;
+}
+
+.finance {
+    padding: 120px calc(50% - 582px);
+    background-color: #F5F5FA;
+    min-height: 1264px;
+    color: #45555F;    
+}
+
+.finance-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.finance__contribution {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fff;
+    max-width:574px;
+    border-radius: 16px 0px 0px 0px;
+    padding-top: 56px;
+    padding-right: 44px;
+    padding-bottom: 56px;
+    padding-left: 40px;
+}
+
+.finance__royalty {
+    box-sizing: border-box;
+    
+    display: inline-block;
+    background-color: #fff;
+    max-width:574px;
+    border-radius: 0px 16px 0px 0px;
+    padding-top: 56px;
+    padding-right: 44px;
+    padding-bottom: 56px;
+    padding-left: 40px;
+}
+
+.finance__title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+}
+
+
+/* добавил размер 830 - иначе не красиво перескакивало вторую строчку
+@media (min-width: 393px) and (max-width: 830px) {
+
+    .for-whom__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for-whom__item {
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width: 393px) {
+
+    .title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+        
+    .for-whom{
+        padding-top: 75px;
+    }
+    .for-whom__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .for-whom__item {
+        margin-bottom: 64px;
+    }
+} */
