@@ -201,8 +201,7 @@
     }
 
 }
-
-/* @media (min-width: 393px) and (max-width: 768px) {
+@media (min-width: 393px) and (max-width: 768px) {
 
 
     .finance-wrap {
@@ -240,4 +239,4 @@
          box-sizing: border-box;
     }
 
-} */
+} 
