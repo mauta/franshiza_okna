@@ -34,6 +34,7 @@
 .ruble{
     font-family: 'Roboto', sans-serif;
 }
+
 .title {
     margin-top: 0;
     font-size: 40px;
@@ -57,11 +58,15 @@
     letter-spacing: 0.2px;
     color: #2D9CDB;
     text-align: left;
+    margin-bottom: 14px;
 }
 
 .finance__footnote {
     margin: 0;
+    margin-top: 9px;
     color: #7290A1;
+    margin-bottom: 48px;
+    width: 376px;
 }
 
 .finance {
@@ -76,37 +81,41 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 16px;
+    
 }
 
 .finance__contribution {
     box-sizing: border-box;
-    display: inline-block;
     background-color: #fff;
-    max-width: 574px;
+    width: 574px;
+    min-height: 629px;
     border-radius: 16px 0px 0px 0px;
-    padding-top: 56px;
+    padding-top: 31px;
     padding-right: 44px;
-    padding-bottom: 56px;
+    
     padding-left: 40px;
+    margin-top: 47px; 
 }
 
 .finance__royalty {
     box-sizing: border-box;
-
-    display: inline-block;
     background-color: #fff;
-    max-width: 574px;
+    width: 574px;
     border-radius: 0px 16px 0px 0px;
-    padding-top: 56px;
+    min-height: 629px;
+    padding-top: 31px;
     padding-right: 44px;
     padding-bottom: 56px;
     padding-left: 40px;
+    margin-top: 47px; 
 }
 
 .finance__title {
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.2px;
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 
 .finance__investment {
@@ -120,10 +129,9 @@
 .finance__start,
 .finance__payback {
     box-sizing: border-box;
-    width: 580px;
-    padding-top: 56px;
+    width: 579px;
+    padding-top: 25px;
     padding-right: 44px;
-    padding-bottom: 56px;
     padding-left: 40px;
     
 }
@@ -131,6 +139,7 @@
 .finance__item{
     padding-left: 28px;
     position: relative;
+    margin-top: 8px;
 }
 
 .finance__item::before{
@@ -143,35 +152,92 @@
     background-color:#A6B9C4;;
 }
 
-
-/* добавил размер 830 - иначе не красиво перескакивало вторую строчку
-@media (min-width: 393px) and (max-width: 830px) {
-
-    .for-whom__list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .for-whom__item {
-        margin-bottom: 64px;
-    }
+.finance__help{
+    position: relative;
+    display: inline-block;
 }
 
-@media (max-width: 393px) {
+.finance__help::after{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    top:1px;
+    right: -31px;
+    background-image: url(../img/information.svg);
+}
 
-    .title {
-        font-size: 28px;
-        line-height: 34px;
-    }
-        
-    .for-whom{
-        padding-top: 75px;
-    }
-    .for-whom__list {
+.finance__help::after:hover{
+    cursor: pointer;
+}
+
+/* добавил размер 830 - иначе не красиво перескакивало вторую строчку  */
+@media (min-width: 768px) and (max-width: 1168px) {
+
+    .finance-wrap {
         flex-direction: column;
         align-items: center;
     }
-    .for-whom__item {
-        margin-bottom: 64px;
+
+    .finance__contribution {
+        margin-bottom: 16px;
+        border-radius: 16px 16px 0px 0px;
+        min-width: 672px;
     }
+
+    .finance__royalty{
+        border-radius: 0px 0px 0px 0px;
+        margin-top: 0;
+        margin-bottom: 16px; 
+        min-width: 672px;
+    }
+
+    .finance__investment{
+        flex-direction: column;
+        align-items: center;
+        min-width: 672px;
+         
+    }
+
+}
+
+/* @media (min-width: 393px) and (max-width: 768px) {
+
+
+    .finance-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finance__contribution {
+        margin-bottom: 16px;
+        border-radius: 16px 16px 16px 16px;
+        max-width: 393px;
+        box-sizing: border-box;
+    }
+
+    .finance__royalty{
+        border-radius: 16px 16px 16px 16px;
+        margin-top: 0;
+        margin-bottom: 16px; 
+        max-width: 393px;
+        box-sizing: border-box;
+    }
+
+    .finance__investment{
+        flex-direction: column;
+        align-items: center;
+        max-width: 393px;
+        border-radius: 16px 16px 16px 16px; 
+        box-sizing: border-box;
+    }
+
+    .finance__item{
+        width: 333px;
+        padding-right: 0;
+        margin-right: 0;
+         box-sizing: border-box;
+    }
+
 } */
