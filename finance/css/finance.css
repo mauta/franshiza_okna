@@ -175,6 +175,10 @@
 /* добавил размер 830 - иначе не красиво перескакивало вторую строчку  */
 @media (min-width: 768px) and (max-width: 1168px) {
 
+    .finance{
+        padding: 120px calc(50% - 336px);  
+      }
+
     .finance-wrap {
         flex-direction: column;
         align-items: center;
@@ -183,26 +187,29 @@
     .finance__contribution {
         margin-bottom: 16px;
         border-radius: 16px 16px 0px 0px;
-        min-width: 672px;
+        max-width: 672px;
     }
 
     .finance__royalty{
         border-radius: 0px 0px 0px 0px;
         margin-top: 0;
         margin-bottom: 16px; 
-        min-width: 672px;
+        max-width: 672px;
     }
 
     .finance__investment{
         flex-direction: column;
         align-items: center;
-        min-width: 672px;
+        max-width: 672px;
          
     }
 
 }
 @media (min-width: 393px) and (max-width: 768px) {
 
+    .finance{
+      padding: 120px calc(50% - 196px);  
+    }
 
     .finance-wrap {
         flex-direction: column;
@@ -211,9 +218,9 @@
 
     .finance__contribution {
         margin-bottom: 16px;
-        
+
         border-radius: 16px 16px 16px 16px;
-        min-width: 393px;
+        max-width: 393px;
         box-sizing: border-box;
     }
 
@@ -221,14 +228,14 @@
         border-radius: 16px 16px 16px 16px;
         margin-top: 0;
         margin-bottom: 16px; 
-        min-width: 393px;
+        max-width: 393px;
         box-sizing: border-box;
     }
 
     .finance__investment{
         flex-direction: column;
         align-items: center;
-        min-width: 393px;
+        max-width: 393px;
         border-radius: 16px 16px 16px 16px; 
         box-sizing: border-box;
     }
