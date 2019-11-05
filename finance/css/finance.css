@@ -157,7 +157,7 @@
     display: inline-block;
 }
 
-.finance__help::after{
+/* .finance__help::after{
     cursor: pointer;
     position: absolute;
     content: "";
@@ -170,6 +170,14 @@
 
 .finance__help::after:hover{
     cursor: pointer;
+} */
+
+[role="tooltip"] {
+    display: none;
+}
+button:hover + [role="tooltip"],  
+button:focus + [role="tooltip"] {  
+    display: block;
 }
 
 /* добавил размер 830 - иначе не красиво перескакивало вторую строчку  */
